@@ -1,0 +1,26 @@
+These are the notes for the final project to keep the tasks organized and keep track of what Ive done and when.
+
+Final project concept: 
+    - Creating a game based off of the childrens picture book The Adventures of Polo
+    - This will be broken down into scenes that involve user interaction to "pass each level" and help Polo move 
+    along through his adventure and mmake it home in the end
+
+Scenes:
+    - Leaving the house and climbing the stairs into clouds
+    - Asking the cloud fisherman to take a ride down to thhe boat below
+    - Riding the boat around the ocean and seeing something in the ocean below and then going down into the sea
+    - Finding fish friends who give Polo the answer of how to open the chest
+    - Opening the chest and finding a star and holding onto it while contuining to adventure
+    - Polo finds a ship and goes inside and finds a friend who lost his key... they key so happened to be the star!
+    - Polo gives him the star and the friend offers to take polo up to the surface to an island
+    - At this island polo notices a grill and picks up some foood to cook over the lava 
+    - After eating polo goes to the volcano which he realizes has a tunnel to the underground mushroom land 
+    - In the mushroom land polo finds a glowing mushroom and holds on to it
+    - The glowing mushroom is the key to a rocket mushroom
+    - Polo says gooodbye to his mushroom friends gets inside the rocket and pushes a button
+    - The rocket takes polo home to end his great adventure!!
+
+04/22/2023:
+    - I set up the files for the code and then types out the premise and the project goals 
+    - I created the sketches for each scene of the game and uploaded all of that to github just to keep a backup
+    
