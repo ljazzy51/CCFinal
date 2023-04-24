@@ -24,3 +24,12 @@ Scenes:
     - I set up the files for the code and then types out the premise and the project goals 
     - I created the sketches for each scene of the game and uploaded all of that to github just to keep a backup
     
+04/23/2023:
+    - Today I set up the class for the different friends that polo meets and polo himself 
+    - I created the polo_move method which allows polo to move around the screens using the arrow keys and it also includes 
+    using the + and - keys to grow and shrink polo which will help polo complete later levels. The n key resets polo's size.
+    - I also created the draw_polo method which draws polo on the screen given the x and y positions given in the initializing of 
+    a new friend to place polo on the screen. 
+    - I also created the background for scene 1 which is just simple shapes at the moment but its fun to look at for now 
+    - Within the class for the different backgrounds, I added things like stairs and sky_water which may be used several times in
+    later scenes so I separated them into functions so they cann be called in multiple places. 
