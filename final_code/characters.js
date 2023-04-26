@@ -70,6 +70,8 @@ class Friends{
             polo_width = 60;
         }
         //print(this.posX, this.posY);
+
+        //add a jump functionality using the space bar maybe? 
     }
 
     one_two(){

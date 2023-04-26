@@ -35,4 +35,7 @@ Scenes:
     later scenes so I separated them into functions so they cann be called in multiple places. 
 
 04/26/2023:
-    - 
+    - Need to add spacebar to jump up the stairs / just jump in general 
+    - Need to add the change of scenes when I touch a certain point on the screen / complete a task 
+    - Need to further develop other scenes
+    - Double check the comments on my code just to make sure that everything is covered 
