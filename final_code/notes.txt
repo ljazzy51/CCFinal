@@ -33,3 +33,6 @@ Scenes:
     - I also created the background for scene 1 which is just simple shapes at the moment but its fun to look at for now 
     - Within the class for the different backgrounds, I added things like stairs and sky_water which may be used several times in
     later scenes so I separated them into functions so they cann be called in multiple places. 
+
+04/26/2023:
+    - 

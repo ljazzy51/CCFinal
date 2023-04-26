@@ -72,5 +72,8 @@ class Friends{
         //print(this.posX, this.posY);
     }
 
+    one_two(){
+        //if polo touches the start of the tightrope and is at least touching the line then the scene changes to the next
+    }
 
 }
