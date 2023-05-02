@@ -5,7 +5,7 @@ let polo_height = 100;
 let polo_width = 60;
 let next_scene = false;
 
-class Friends{
+class Friends{      
 
     constructor(x , y){
         this.posX = x;

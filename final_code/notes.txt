@@ -42,3 +42,6 @@ Scenes:
     - IDEA: Using the speech libraries to have the instructions for the game be spoken out to the player
     instead of simply just a text box 
     - IDEA: Implement the p5.play library in order to use it for things like the collision detection or the movement of objects 
+
+05/02/2023:
+    - Trying to figure out why adding the p5.play library freezes the game from working 

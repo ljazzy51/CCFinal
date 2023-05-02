@@ -4,7 +4,7 @@ let scene_look;
 function setup(){
   createCanvas(windowWidth,windowHeight);
   polo = new Friends(855, 555);
-  scene_look = new Scene_background()
+  scene_look = new Scene_background();
   
 }
 
