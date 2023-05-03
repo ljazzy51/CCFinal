@@ -1,12 +1,20 @@
 // these functions draw certain aspects that may be reused in other scenes. 
+
 function draw_stairs(){
     // rectangle and lines that represents the stairs to the next level 
-    noStroke;
-    fill(0);
-    rect(windowWidth * 5/7, windowHeight * 4/5 , 25, 75);
-    stroke(0);
-    strokeWeight(3);
-    line(windowWidth * 5/7 + 2, windowHeight * 4/5 + 3, windowWidth, windowHeight * 4/5 + 3);
+    stairs.color = "black";
+    stairs.width = 25;
+    stairs.height = 75;
+    stairs.x = windowWidth * 5/7;
+    stairs.y = windowHeight * 4/5;
+    stairs.collider = 'k';
+
+    rope.color = "black";
+    rope.width = 410;
+    rope.height = 3;
+    rope.x = stairs.x + 205;
+    rope.y = stairs.y - (stairs.height /2 - 10);
+    rope.rotation = 180;
 }
   
 function draw_sky_water(){
@@ -39,6 +47,11 @@ class Scene_background{
         noStroke;
         fill(255,118,87);
         rect(windowWidth/2 - 50, windowHeight * 2/5 + 50, 150, 250);
+        draw_stairs();
+    }
+
+    scene_two_background(){
+        draw_sky_water();
         draw_stairs();
     }
 

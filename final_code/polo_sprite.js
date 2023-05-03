@@ -5,6 +5,8 @@
 function draw_polo(){
     polo.stroke = "none";
     polo.color = "beige"; 
+    // disables polo from rotating when it collides with the stairs 
+    polo.rotation = 0;
 }
 
 // this function controls polos movement through the arrow keys 
@@ -39,12 +41,12 @@ function polo_move(){
     }
 
     // allowing polo to grow and shrink using the + and - keys 
-    // growing polo - + key
+    // growing polo - += key
     if((kb.pressing("+")) || (kb.pressing("="))){
         polo.height += 1;
         polo.width += 1;
     }
-    // shrinking polo - - key
+    // shrinking polo - -_ key
     if((kb.pressing("_")) || (kb.pressing("-"))){
         polo.height -= 1;
         polo.width -= 1;
@@ -54,4 +56,12 @@ function polo_move(){
         polo.height = 100;
         polo.width = 60;
     }
-  }
+}
+
+function one_two(){
+    if((polo.collides(stairs)) || (polo.collides(rope))){
+        scene_1_finished = true; 
+        polo.x = 50;
+        polo.y = 550; 
+    }
+}

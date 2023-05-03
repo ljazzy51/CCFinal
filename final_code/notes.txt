@@ -48,3 +48,4 @@ Scenes:
         - When I run pretty much exactly the same code on a separate document it seems to work fine. I have no idea why when I 
         run it in this code it doesnt work at all
     - Figured out that it was an issue with the difference in using keycodes within the play library and now it works 
+    - Added collision feature to the stairs and the rope by making them both sprites and adding the next background for the next scene
