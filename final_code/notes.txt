@@ -45,3 +45,6 @@ Scenes:
 
 05/02/2023:
     - Trying to figure out why adding the p5.play library freezes the game from working 
+        - When I run pretty much exactly the same code on a separate document it seems to work fine. I have no idea why when I 
+        run it in this code it doesnt work at all
+    - Figured out that it was an issue with the difference in using keycodes within the play library and now it works 
