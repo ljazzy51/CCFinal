@@ -1,6 +1,7 @@
 let polo;
 let stairs;
 let rope;
+let cloud_stairs;
 let scene_look;
 let scene_1_finished = false;
 
@@ -12,7 +13,7 @@ function setup(){
   scene_look = new Scene_background();
   stairs = new Sprite();
   rope = new Sprite();
-
+  cloud_stairs = new Sprite();
 }
 
 function draw(){

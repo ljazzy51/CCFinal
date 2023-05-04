@@ -1,5 +1,15 @@
 // these functions draw certain aspects that may be reused in other scenes. 
 
+function stairs_to_cloud(){
+    cloud_stairs.color = 'black';
+    cloud_stairs.width = 25;
+    cloud_stairs.height = 75;
+    cloud_stairs.x = 100;
+    cloud_stairs.y = 550;
+    cloud_stairs.collider = 'k';
+}
+
+
 function draw_stairs(){
     // rectangle and lines that represents the stairs to the next level 
     stairs.color = "black";
@@ -15,6 +25,7 @@ function draw_stairs(){
     rope.x = stairs.x + 205;
     rope.y = stairs.y - (stairs.height /2 - 10);
     rope.rotation = 180;
+    rope.collider = 'k'
 }
   
 function draw_sky_water(){
@@ -52,7 +63,7 @@ class Scene_background{
 
     scene_two_background(){
         draw_sky_water();
-        draw_stairs();
+        stairs_to_cloud();
     }
 
 }

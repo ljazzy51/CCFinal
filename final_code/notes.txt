@@ -49,3 +49,19 @@ Scenes:
         run it in this code it doesnt work at all
     - Figured out that it was an issue with the difference in using keycodes within the play library and now it works 
     - Added collision feature to the stairs and the rope by making them both sprites and adding the next background for the next scene
+
+05/04/2023:
+    - Trying to set up the switch in scenes through scene 1 to scene 2
+    - Working on the increments of the stairs in order for them to actually look like stairs while remining responsive to polo 
+    - Question: How to make every step a sprite without making individual sprites for each step 
+    - Considering making the stairs just a series of rectangles rather than lines. 
+    - When I remove the stairs from the scene 2 method for some reason they still draw. Im not entirely sure why this may be. They also
+    appear to be unresponsive to any changing of the location even when I switch it using both variables and the sprite methods
+    - Goal is to try to get polo to jump but its really not working right either and its driving me crazy 
+    - A weird sprite is coming out of nowhere. Ive scavenged my code for it but for some reason its just randomly in the middle of the 
+    screen when I start the sketch. I have added the start of the stairs for the new scene and only after that did it begin to show up but
+    the stairs are also showing up so Im not sure what this random sprite is.
+    - For some reason too the new stairs are showing up but the old stairs are also showing up even though theyre not called at all during 
+    that phase of the sketch. Im really not sure what the problem is so Im gonna take a break and hope that i can catch a mistake when I 
+    return to the code with fresh eyes
+    
