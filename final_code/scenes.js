@@ -1,6 +1,6 @@
 // these functions draw certain aspects that may be reused in other scenes. 
-
 function stairs_to_cloud(){
+    cloud_stairs = new Sprite();
     cloud_stairs.color = 'black';
     cloud_stairs.width = 25;
     cloud_stairs.height = 75;
@@ -39,31 +39,34 @@ function draw_sky_water(){
     rect(0, (windowHeight * 2/3), windowWidth, (windowHeight * 1/3));
 }
 
-// this is the class for the different backgrounds to scenes
-class Scene_background{
-    constructor(){
-    }
-
-    scene_one_background(){
-        draw_sky_water();
-        // ellipse that creates the island 
-        noStroke;
-        fill(246,202,153);
-        ellipse(windowWidth/2, windowHeight * 4/5, 700, 245);
-        // rectangle that represents the treehouse 
-        noStroke;
-        fill(125,103,77);
-        rect(windowWidth * 2/5 - 50, 0, 400, 600);
-        // rectangle that represents the door 
-        noStroke;
-        fill(255,118,87);
-        rect(windowWidth/2 - 50, windowHeight * 2/5 + 50, 150, 250);
-        draw_stairs();
-    }
-
-    scene_two_background(){
-        draw_sky_water();
-        stairs_to_cloud();
-    }
-
+// this are the functions for the different backgrounds to scenes
+function scene_one_background(){
+    draw_sky_water();
+    // ellipse that creates the island 
+    noStroke;
+    fill(246,202,153);
+    ellipse(windowWidth/2, windowHeight * 4/5, 700, 245);
+    // rectangle that represents the treehouse 
+    noStroke;
+    fill(125,103,77);
+    rect(windowWidth * 2/5 - 50, 0, 400, 600);
+    // rectangle that represents the door 
+    noStroke;
+    fill(255,118,87);
+    rect(windowWidth/2 - 50, windowHeight * 2/5 + 50, 150, 250);
+    draw_stairs();
 }
+
+function scene_two_background(){
+    draw_sky_water();
+    stairs_to_cloud();
+}
+
+function one_two(){
+    if((polo.collides(stairs)) || (polo.collides(rope))){
+      scene_1_finished = true; 
+      polo.x = 50;
+      polo.y = 550; 
+      // something to remove the first stairs before the new stairs show up
+    }   
+  }

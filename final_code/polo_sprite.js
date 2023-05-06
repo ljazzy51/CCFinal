@@ -69,10 +69,3 @@ function polo_move(){
   }
 }
 
-function one_two(){
-  if((polo.collides(stairs)) || (polo.collides(rope))){
-    scene_1_finished = true; 
-    polo.x = 50;
-    polo.y = 550; 
-  }   
-}

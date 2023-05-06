@@ -64,4 +64,18 @@ Scenes:
     - For some reason too the new stairs are showing up but the old stairs are also showing up even though theyre not called at all during 
     that phase of the sketch. Im really not sure what the problem is so Im gonna take a break and hope that i can catch a mistake when I 
     return to the code with fresh eyes
-    
+
+05/06/2023:
+    - Continuing the impossible task of finishing this and fighting against every fibre of my being that is begging me to go on a walk instead
+    - Questions still exist about the switching bewteen scenes and the issue with the stairs not working with the replacement and the weird
+    random sprite that keeps popping up. Im going to try to sift through the code to find where these issues lie
+    - The next step after fixinng the stairs would to go upto the clouds and meet the cloud man (another sprite)
+        - Includes interaction with the second sprite and asking for the fishing line 
+        - Try to integrate the use of a chat box as if theyre having a dialouge so that the player knows how to continue with the game
+    - I dont understand why the transition to the next scene isnt working. I have looked through the code 1000 times and I cant seem to find
+    anything that looks like its in the wrong place or out of the ordinary 
+    - I changed the scene changes from methods in a class to simply funtions that are called and it still doesnt fix the issue with the 
+    stairs being drawn twice
+    - I got the stairs to either not show up or the stairs to interact with polo and I cant figure out to have BOTH occur. It seems to be a matter of 
+    where I instantiate the sprites. If I start them in the setup they show up in the first scene and can interactt with polo but when I start them in 
+    the functions of the stairs they dont show up but they dont interact. I have no idea what the best decicion is for this 
