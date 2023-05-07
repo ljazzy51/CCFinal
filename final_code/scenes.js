@@ -12,13 +12,13 @@ function stairs_to_cloud(){
     steps.color = 'black';
     steps.width = 25;
     steps.height = 10; 
-    steps.x = 00
+    steps.x = 100
     steps.y = 550;
 
-    while(steps.size < 10){
+    while(steps.length < 25){
         let step_up = new steps.Sprite();
-        step_up.x += 25;
-        step_up.y -= 10; 
+        step_up.x = steps.x + 25;
+        step_up.y = steps.y - 10; 
     }
 }
 

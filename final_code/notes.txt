@@ -83,3 +83,6 @@ Scenes:
     figuring out this stair problem. 
     - FINALLY got the first set of stairs to go away and now Im working on getting the steps off of he base of the stairs to work witthout spawning all
     over the place and basically infinately. 
+    - I've written out the steps for each of the next scene and how I want the sprites to interact but for now Im going tp take a break and come back to 
+    this either later or tomorrow 
+        - First steps for when i come back will to focus on the placement of the steps up to where the cloud will be
