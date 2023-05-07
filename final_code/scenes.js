@@ -7,6 +7,19 @@ function stairs_to_cloud(){
     cloud_stairs.x = 100;
     cloud_stairs.y = 550;
     cloud_stairs.collider = 'k';
+
+    steps = new Group();
+    steps.color = 'black';
+    steps.width = 25;
+    steps.height = 10; 
+    steps.x = 00
+    steps.y = 550;
+
+    while(steps.size < 10){
+        let step_up = new steps.Sprite();
+        step_up.x += 25;
+        step_up.y -= 10; 
+    }
 }
 
 
@@ -58,6 +71,8 @@ function scene_one_background(){
 }
 
 function scene_two_background(){
+    stairs.remove();
+    rope.remove();
     draw_sky_water();
     stairs_to_cloud();
 }

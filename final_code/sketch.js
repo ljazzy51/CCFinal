@@ -26,7 +26,7 @@ function draw(){
 
   draw_polo();
   polo_move();
-
+  
   one_two();
   
 }
