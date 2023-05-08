@@ -98,4 +98,7 @@ Scenes:
     - This is all proving to be much more difficult than I originally intended and its drivibg me sort of mad
     - The rod_lines isnt working right because there is a random sprite in the first scene and then it looks fine in the second scene but there are polo
     sprites spawning in the backround of the scene and the movements all slow down from the volume of the sprites
-    
+    - I changed the rod from a sprite to simply just a line and that all seems o work a bit better
+    - I dont know what to do because if the balls are in dynamic mode theres a trillion of them but if theyre in kinematic mode then they are unable to be
+    moved. I cant find anything on what Im supposed to do here with this because it doesnt seem to be working regardless 
+    - Once I am able to remove the balls then I can add a counter so I can trade the balls for a ride down the cloudman's fishing poll (Its like bait)

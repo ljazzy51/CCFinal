@@ -71,13 +71,9 @@ function draw_cloud(){
     fill(0);
     rect(1110, 150, 50, 5);
     
-    rod_line.color = "black";
-    rod_line.width = 5;
-    rod_line.height = 400;
-    rod_line.x = 1157;
-    rod_line.y = 350;
-    rod_line.collider = 'k';
-
+    // draws the line of the fishing rod
+    fill(0);
+    rect(1155, 150, 5, 400);
 }
 
 function scene_two_background(){
@@ -86,6 +82,7 @@ function scene_two_background(){
     draw_sky_water();
     stairs_to_cloud();
     draw_cloud();
+    draw_balls();
 
 }
 
