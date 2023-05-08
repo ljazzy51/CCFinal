@@ -3,6 +3,9 @@ let stairs;
 let rope;
 let cloud_stairs;
 let scene_1_finished = false;
+let steps;
+let cloud;
+let rod_line;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
@@ -11,7 +14,7 @@ function setup(){
   polo.height = 100;
   stairs = new Sprite();
   rope = new Sprite();
-
+  rod_line = new Sprite();
 }
 
 function draw(){

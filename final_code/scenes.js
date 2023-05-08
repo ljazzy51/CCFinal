@@ -1,25 +1,14 @@
 // these functions draw certain aspects that may be reused in other scenes. 
 function stairs_to_cloud(){
-    cloud_stairs = new Sprite();
-    cloud_stairs.color = 'black';
-    cloud_stairs.width = 25;
-    cloud_stairs.height = 75;
-    cloud_stairs.x = 100;
-    cloud_stairs.y = 550;
-    cloud_stairs.collider = 'k';
+    steps = new Sprite();
+    steps.img = 'data/steps.png'; 
+    steps.scale = 0.75
+    steps.x = 525; 
+    steps.y = 400;
+    steps.collider = 'k';
 
-    steps = new Group();
-    steps.color = 'black';
-    steps.width = 25;
-    steps.height = 10; 
-    steps.x = 100
-    steps.y = 550;
+    polo.overlaps(steps);
 
-    while(steps.length < 25){
-        let step_up = new steps.Sprite();
-        step_up.x = steps.x + 25;
-        step_up.y = steps.y - 10; 
-    }
 }
 
 
@@ -70,11 +59,34 @@ function scene_one_background(){
     draw_stairs();
 }
 
+function draw_cloud(){
+    // draws cloud
+    noStroke();
+    fill(255);
+    ellipse(1025, 175, 300, 100);
+    // draws cloudman
+    fill(240,149,25);
+    ellipse(1100, 150, 50, 100);
+    // draws cloudman's fishing rod
+    fill(0);
+    rect(1110, 150, 50, 5);
+    
+    rod_line.color = "black";
+    rod_line.width = 5;
+    rod_line.height = 400;
+    rod_line.x = 1157;
+    rod_line.y = 350;
+    rod_line.collider = 'k';
+
+}
+
 function scene_two_background(){
     stairs.remove();
     rope.remove();
     draw_sky_water();
     stairs_to_cloud();
+    draw_cloud();
+
 }
 
 function one_two(){
@@ -82,6 +94,5 @@ function one_two(){
       scene_1_finished = true; 
       polo.x = 50;
       polo.y = 550; 
-      // something to remove the first stairs before the new stairs show up
     }   
   }

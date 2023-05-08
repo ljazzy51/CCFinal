@@ -86,3 +86,16 @@ Scenes:
     - I've written out the steps for each of the next scene and how I want the sprites to interact but for now Im going tp take a break and come back to 
     this either later or tomorrow 
         - First steps for when i come back will to focus on the placement of the steps up to where the cloud will be
+
+05/07/2023:
+    - Started by adding just an image of stairs instead of rectangles 
+    - Considering adding some sort of balls in order to make the player go up the stairs
+    - When I put in the image of the cloud for some reason it removes all of the background of scene 2
+        - When I remove the image of the cloud everything works just fine but when I add the image it breaks it
+        - When the background is removed I can also see that the polo sprite and two others which im assuming are the rope and the scene 1 stairs are 
+        infinately spawning in the background. I dont know how to get that to stop happening without theh sprites either going away or losing their 
+        functionality 
+    - This is all proving to be much more difficult than I originally intended and its drivibg me sort of mad
+    - The rod_lines isnt working right because there is a random sprite in the first scene and then it looks fine in the second scene but there are polo
+    sprites spawning in the backround of the scene and the movements all slow down from the volume of the sprites
+    
