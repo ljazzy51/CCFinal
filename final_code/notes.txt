@@ -122,3 +122,6 @@ Scenes:
     - I made a slight change and instead of setting group color and shape I set it within the for loop where the balls are created and that seems to work
     - I think it is an issue with the collider type because if I change the collider to dynamic it spawns extra but it responds to the collisions however
     when I change it to k or s then it doesnt spawn extra but it also wont allow me to collect the balls
+    - Im going to explode I feel like everytime I get one thing to work something else goes comepletely wrong. I dont know where to go with the balls issue
+    - I have begun mapping out the other scenes of the game in detail in my notebook while Im trying to figure out the issue with the balls just to keep
+    my process rolling on this

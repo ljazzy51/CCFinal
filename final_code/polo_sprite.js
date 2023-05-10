@@ -78,7 +78,7 @@ function draw_balls(){
     let ball = new Sprite();
     ball.color = 'gold';
     ball.diameter = 10;
-    ball.collider = 's';
+    ball.collider = 'k';
     balls.add(ball);
   }
   // setting the x and y position for each of the balls within the balls group 
@@ -114,7 +114,7 @@ function draw_balls(){
 function collect(){
   for (let b = 0; b >= balls.length; b++){
     b_index = balls[b];
-    if(polo.collides(b_index)){
+    if(polo.overlaps(b_index)){
       balls[b].remove();
     }
   }
