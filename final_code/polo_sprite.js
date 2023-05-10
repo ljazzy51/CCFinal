@@ -72,41 +72,50 @@ function polo_move(){
 
 function draw_balls(){
   balls = new Group();
-  balls.color = "gold";
-  balls.diameter = 10;
-  balls.collider = 'k';
 
-  let ball1 = new balls.Sprite();
-  ball1.x = 210;
-  ball1.y = 550;
-  let ball2 = new balls.Sprite();
-  ball2.x = 300;
-  ball2.y = 495;
-  let ball3 = new balls.Sprite();
-  ball3.x = 385;
-  ball3.y = 440;
-  let ball4 = new balls.Sprite();
-  ball4.x = 480;
-  ball4.y = 385;
-  let ball5 = new balls.Sprite();
-  ball5.x = 560;
-  ball5.y = 330;
-  let ball6 = new balls.Sprite();
-  ball6.x = 655;
-  ball6.y = 275;
-  let ball7 = new balls.Sprite();
-  ball7.x = 745;
-  ball7.y = 220;
-  let ball8 = new balls.Sprite();
-  ball8.x = 835;
-  ball8.y = 165;
+  // Adding 8 balls to the ball group using a for loop
+  for (let b = 0; b < 8; b++){
+    let ball = new Sprite();
+    ball.color = 'gold';
+    ball.diameter = 10;
+    ball.collider = 's';
+    balls.add(ball);
+  }
+  // setting the x and y position for each of the balls within the balls group 
+  balls[0].x = 210;
+  balls[0].y = 550;
   
-  polo.overlaps(balls, collect); 
+  balls[1].x = 300;
+  balls[1].y = 495;
   
+  balls[2].x = 385;
+  balls[2].y = 440;
   
+  balls[3].x = 480;
+  balls[3].y = 385;
+  
+  balls[4].x = 560;
+  balls[4].y = 330;
+  
+  balls[5].x = 655;
+  balls[5].y = 275;
 
+  balls[6].x = 745;
+  balls[6].y = 220;
+  
+  balls[7].x = 835;
+  balls[7].y = 165;
+
+  collect();
+  
 }
 
-function collect(polo, balls){
-  balls.remove();
+// removes whatever ball polo is touching 
+function collect(){
+  for (let b = 0; b >= balls.length; b++){
+    b_index = balls[b];
+    if(polo.collides(b_index)){
+      balls[b].remove();
+    }
+  }
 }

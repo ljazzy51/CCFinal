@@ -113,4 +113,12 @@ Scenes:
         - Make the interactivity purposeful 
         - Add a couple more ellipses in order to make the cloud look more cloud like 
         - Background music?? Focus on getting the project to work first but this is something to think about 
-    
+
+05/10/2023:
+    - Create reactivity with the bait so that polo can collect them 
+    - I changed the balls so that they are spawned using a for loop. However, now they are showing up as rectangles not as balls and they are spawning
+    infinately again not just the singular ball amount. I dont necessarily understand why this is as he for loop should only create 8 sprites. I dont 
+    understand why the sprites are multiplying if they are not set in any way to do that
+    - I made a slight change and instead of setting group color and shape I set it within the for loop where the balls are created and that seems to work
+    - I think it is an issue with the collider type because if I change the collider to dynamic it spawns extra but it responds to the collisions however
+    when I change it to k or s then it doesnt spawn extra but it also wont allow me to collect the balls
