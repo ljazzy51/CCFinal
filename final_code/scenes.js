@@ -111,9 +111,8 @@ function two_three(){
 }
 
 function scene_three_background(){
+    noStroke();
+    background(62,115,224);
     boat.remove();
     helmet.remove();
-    noStroke();
-    fill(62,115,224);
-    rect(0,0,windowWidth, windowHeight);
 }
