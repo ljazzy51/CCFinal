@@ -125,3 +125,10 @@ Scenes:
     - Im going to explode I feel like everytime I get one thing to work something else goes comepletely wrong. I dont know where to go with the balls issue
     - I have begun mapping out the other scenes of the game in detail in my notebook while Im trying to figure out the issue with the balls just to keep
     my process rolling on this
+
+05/11/2023:
+    - Heres my thoughts today. I am thinking I need to simply delete the scene with the balls and the cloudman and simply go into the next scene with the
+    boat. I am running out of time to finish this and I think I need to adjust my vision with the project because finished is better than perfect.
+    Im disappointed in myself for having to cut corners but to be honest  I think it shows a lot of growth in me because earlier in the semester I would 
+    agoonized over this and given up because it wasnt perfect so to decide I need to just keep moving forward is massive growth for me. 
+    - "Starting over" with scene 2 by going straight to the boat

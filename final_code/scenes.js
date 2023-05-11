@@ -1,15 +1,4 @@
 // these functions draw certain aspects that may be reused in other scenes. 
-function stairs_to_cloud(){
-    steps = new Sprite();
-    steps.img = 'data/steps.png'; 
-    steps.scale = 0.75
-    steps.x = 525; 
-    steps.y = 400;
-    steps.collider = 'k';
-
-    polo.overlaps(steps);
-
-}
 
 
 function draw_stairs(){
@@ -80,10 +69,6 @@ function scene_two_background(){
     stairs.remove();
     rope.remove();
     draw_sky_water();
-    stairs_to_cloud();
-    draw_cloud();
-    draw_balls();
-
 }
 
 function one_two(){
