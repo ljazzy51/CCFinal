@@ -64,6 +64,7 @@ function draw_cloud(){
     rect(1155, 150, 5, 400);
 }
 
+// creating the background for the second scene which is reallly just a buffer scene to get to the "meat" of the game
 function scene_two_background(){
     stairs.remove();
     rope.remove();
@@ -107,11 +108,15 @@ function draw_helmet(){
 }
 
 function two_three(){
-    if((polo.x > 675) && (polo.x < 750) && (polo.y > 405) && (polo.y < 490)){
-        scene_2_finished = true; 
+    if(scene_3_finished == false && scene_2_finished == false){
+        if((polo.x > 675) && (polo.x < 750) && (polo.y > 405) && (polo.y < 490)){
+            scene_2_finished = true; 
+            polo.y = 100; 
+        }
     }
 }
 
+// creating the set up for the 3rd scene (underwater scene)
 function scene_three_background(){
     boat.visible = false; 
     helmet.y = polo.y - 20;
@@ -120,5 +125,9 @@ function scene_three_background(){
     background(62,115,224);
 
     polo_helmet();
+    treasure.visible = true;
+    treasure_box();
+    fish.visible = true;
+    fish_friends();
 }
 

@@ -141,5 +141,11 @@ Scenes:
     - Even when I move the boat and helmet the original location of the boat and the helmet remain there and dont move which makes me think theyre spawning
     on top of eachother 
     - I got the boat and helmet to work how I want them to by using the visible method.
+
+05/11/2023 (Working on Scene 3): 
     - Polo is now wearing the helmet when underwater and the helmet flips in accordance to which direction polo is moving in
     - Now implementing the treasure box and the fish friends 
+    - Scene 3 is where the bulk of the interaction for the game begins as teh first two scenes are set up for the game and scene 3 is where the functions
+    of an actual game begins. 
+    - I added one fish and got it to loop back and forth within the bounds of the window. Im in the process of trying to add a few fish but either I have 
+    1 fish or I have an infinate amount that keeps multiplying and I really just want like 10 so idk what the deal is here 

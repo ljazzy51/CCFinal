@@ -7,6 +7,9 @@ let steps;
 let helmet;
 let boat;
 let scene_2_finished = false;
+let scene_3_finished = false;
+let treasure;
+let fish;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
@@ -19,6 +22,14 @@ function setup(){
   boat = new Sprite();
   helmet.visible = false;
   boat.visible = false;
+  treasure = new Sprite();
+  treasure.visible = false;
+ 
+  fish = new Sprite();
+  fish.x = random(0, windowWidth);
+  fish.y = random(0, 300); 
+  fish.visible = false;
+  
 }
 
 function draw(){
