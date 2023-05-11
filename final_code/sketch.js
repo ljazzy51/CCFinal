@@ -15,6 +15,10 @@ function setup(){
   polo.height = 100;
   stairs = new Sprite();
   rope = new Sprite();
+  helmet = new Sprite();
+  boat = new Sprite();
+  helmet.visible = false;
+  boat.visible = false;
 }
 
 function draw(){

@@ -140,3 +140,6 @@ Scenes:
     just pngs rather than shapes. Is that the difference? The sprite type? 
     - Even when I move the boat and helmet the original location of the boat and the helmet remain there and dont move which makes me think theyre spawning
     on top of eachother 
+    - I got the boat and helmet to work how I want them to by using the visible method.
+    - Polo is now wearing the helmet when underwater and the helmet flips in accordance to which direction polo is moving in
+    - Now implementing the treasure box and the fish friends 

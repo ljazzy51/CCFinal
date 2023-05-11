@@ -82,7 +82,7 @@ function one_two(){
 }
 
 function draw_boat(){
-    boat = new Sprite();
+    boat.visible = true;
     boat.img = 'data/boat.png';
     boat.x = windowWidth/2; 
     boat.y = 550;
@@ -97,7 +97,7 @@ function anchor_line(){
 }
 
 function draw_helmet(){
-    helmet = new Sprite();
+    helmet.visible = true;
     helmet.img = 'data/helmet.png';
     helmet.x = 675;
     helmet.y = 405; 
@@ -113,9 +113,12 @@ function two_three(){
 }
 
 function scene_three_background(){
-    boat.y = 200; 
-    helmet.y = 50;
+    boat.visible = false; 
+    helmet.y = polo.y - 20;
+    helmet.x = polo.x;
     noStroke();
     background(62,115,224);
 
+    polo_helmet();
 }
+

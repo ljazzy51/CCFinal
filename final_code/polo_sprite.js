@@ -69,3 +69,12 @@ function polo_move(){
     polo.width = 60;
   }
 }
+
+function polo_helmet(){
+  if(kb.pressing('left')){ 
+    helmet.mirror.x = false;
+  }
+  if(kb.pressing('right')){ 
+    helmet.mirror.x = true;
+  }
+}
