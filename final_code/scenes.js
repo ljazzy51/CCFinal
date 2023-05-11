@@ -1,6 +1,5 @@
 // these functions draw certain aspects that may be reused in other scenes. 
 
-
 function draw_stairs(){
     // rectangle and lines that represents the stairs to the next level 
     stairs.color = "black";
@@ -69,6 +68,7 @@ function scene_two_background(){
     stairs.remove();
     rope.remove();
     draw_sky_water();
+    anchor_line();
 }
 
 function one_two(){
@@ -77,4 +77,43 @@ function one_two(){
       polo.x = 50;
       polo.y = 550; 
     }   
-  }
+}
+
+function draw_boat(){
+    boat = new Sprite();
+    boat.img = 'data/boat.png';
+    boat.x = windowWidth/2; 
+    boat.y = 550;
+    boat.collider = 'k';
+    polo.overlaps(boat); 
+}
+
+function anchor_line(){
+    strokeWeight(5);
+    stroke(0);
+    line(0, 600, windowWidth/2 - 100, 600);
+}
+
+function draw_helmet(){
+    helmet = new Sprite();
+    helmet.img = 'data/helmet.png';
+    helmet.x = 675;
+    helmet.y = 405; 
+    helmet.collider = 'k';
+    polo.overlaps(helmet);
+
+}
+
+function two_three(){
+    if((polo.x > 675) && (polo.x < 750) && (polo.y > 405) && (polo.y < 490)){
+        scene_2_finished = true; 
+    }
+}
+
+function scene_three_background(){
+    boat.remove();
+    helmet.remove();
+    noStroke();
+    fill(62,115,224);
+    rect(0,0,windowWidth, windowHeight);
+}

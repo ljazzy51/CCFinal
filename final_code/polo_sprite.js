@@ -3,7 +3,7 @@
 // this function draws polo on the screen in beige and no stroke
 // the size and shape come from polo.width and polo.height 
 function draw_polo(){
-  polo.stroke = "none";
+  polo.stroke = "beige";
   polo.color = "beige"; 
   // disables polo from rotating when it collides with the stairs 
   polo.rotation = 0;

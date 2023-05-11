@@ -132,3 +132,6 @@ Scenes:
     Im disappointed in myself for having to cut corners but to be honest  I think it shows a lot of growth in me because earlier in the semester I would 
     agoonized over this and given up because it wasnt perfect so to decide I need to just keep moving forward is massive growth for me. 
     - "Starting over" with scene 2 by going straight to the boat
+    - Added the boat and connected the line from the first scene to lead polo to the boat
+    - When polo goes to the boat polo must collect the  underwater suit (im sure theres a real name for this but i cant think of it lol)
+    - Polo collecting the suit triggers the scene change to being underwater

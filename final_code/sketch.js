@@ -4,8 +4,9 @@ let rope;
 let cloud_stairs;
 let scene_1_finished = false;
 let steps;
-let cloud;
-let balls;
+let helmet;
+let boat;
+let scene_2_finished = false;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
@@ -22,6 +23,11 @@ function draw(){
   }
   if(scene_1_finished == true){
     scene_two_background();
+    draw_boat();
+    draw_helmet();
+  }
+  if(scene_2_finished == true){
+    scene_three_background();
   }
 
   print(mouseX, "and ", mouseY);
@@ -30,5 +36,7 @@ function draw(){
   polo_move();
   
   one_two();
+  two_three(); 
+
   
 }
