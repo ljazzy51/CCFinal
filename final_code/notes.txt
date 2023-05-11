@@ -149,3 +149,5 @@ Scenes:
     of an actual game begins. 
     - I added one fish and got it to loop back and forth within the bounds of the window. Im in the process of trying to add a few fish but either I have 
     1 fish or I have an infinate amount that keeps multiplying and I really just want like 10 so idk what the deal is here 
+    - I got the normal fish to work how I want them to work now Im adding the special fish who gives the key!
+    

@@ -10,6 +10,7 @@ let scene_2_finished = false;
 let scene_3_finished = false;
 let treasure;
 let fish;
+let fishies;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
@@ -24,11 +25,18 @@ function setup(){
   boat.visible = false;
   treasure = new Sprite();
   treasure.visible = false;
- 
-  fish = new Sprite();
-  fish.x = random(0, windowWidth);
-  fish.y = random(0, 300); 
-  fish.visible = false;
+
+  // creating the fishies group for the 3rd scene 
+  fishies = new Group();
+
+  for(let i = 0; i <11; i++){
+    fish = new Sprite((random(0, windowWidth)), (random(0, 300)));
+    fish.overlap(fishies);
+    fishies.add(fish); 
+  }
+  
+  fishies.visible = false;
+  
   
 }
 
@@ -43,7 +51,7 @@ function draw(){
     scene_three_background();
   }
 
-  print(mouseX, "and ", mouseY);
+  //print(mouseX, "and ", mouseY);
 
   draw_polo();
   polo_move();
@@ -51,5 +59,4 @@ function draw(){
   one_two();
   two_three(); 
 
-  
 }

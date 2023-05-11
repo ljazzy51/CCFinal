@@ -8,26 +8,30 @@ function treasure_box(){
 }
 
 function fish_friends(){
-    fish.img = 'data/reg_fish.png';
-    fish.rotation = 0;
-    fish.collider = 'd';
-    
-    if ((fish.x > 0) && (fish.x < windowWidth)){
-        if(fish.mirror.x == true){
-            fish.vel.x = 0.5;
+    fishies.img = 'data/reg_fish.png';
+    fishies.rotation = 0;
+    fishies.collider = 'd';
+
+
+    for(let i = 0; i < fishies.length; i++){
+        if((fishies[i].x > 0) && (fishies[i].x < windowWidth)){
+            if(fishies[i].mirror.x == true){
+                fishies[i].vel.x = random(0.5, 1);
+            }
+            else{
+                fishies[i].vel.x = random(-0.5, -1);;
+            }
+            fishies[i].vel.y = random(-0.5, 0.5);
         }
-        else{
-            fish.vel.x = -0.5;
+        else if(fishies[i].x <= 0){ 
+            fishies[i].mirror.x = true;
+            fishies[i].x += 2;
         }
-        fish.vel.y = random(-0.5, 0.5);
+        else if (fishies[i].x >= windowWidth){
+            fishies[i].mirror.x = false;
+            fishies[i].x -= 2;
+        }
     }
-    else if(fish.x <= 0){ 
-        fish.mirror.x = true;
-        fish.x += 2;
-    }
-    else if (fish.x >= windowWidth){
-        fish.mirror.x = false;
-        fish.x -= 2;
-    }
+
 
 }

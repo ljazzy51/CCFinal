@@ -127,7 +127,7 @@ function scene_three_background(){
     polo_helmet();
     treasure.visible = true;
     treasure_box();
-    fish.visible = true;
+    fishies.visible = true;
     fish_friends();
 }
 
