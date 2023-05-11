@@ -129,5 +129,10 @@ function scene_three_background(){
     treasure_box();
     fishies.visible = true;
     fish_friends();
+    fish_leader.visible = true;
+    special_fish();
+    polo_fish_leader();
+    polo_get_key();
+    polo_has_key();
 }
 

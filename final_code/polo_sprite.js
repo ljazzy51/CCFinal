@@ -78,3 +78,15 @@ function polo_helmet(){
     helmet.mirror.x = true;
   }
 }
+
+function help(x_, y_, w_, h_){
+  instructions.color = 'pink';
+  instructions.x = x_;
+  instructions.y = y_;
+  instructions.width = w_;
+  instructions.height = h_; 
+  instructions.textSize = 20;
+  instructions.text = "Ask the fish leader for help by clicking her!";
+  instructions.collider = 'static'; 
+  instructions.rotation = 0; 
+}
