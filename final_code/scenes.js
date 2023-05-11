@@ -69,6 +69,8 @@ function scene_two_background(){
     rope.remove();
     draw_sky_water();
     anchor_line();
+    draw_boat();
+    draw_helmet();
 }
 
 function one_two(){
@@ -111,8 +113,9 @@ function two_three(){
 }
 
 function scene_three_background(){
+    boat.y = 200; 
+    helmet.y = 50;
     noStroke();
     background(62,115,224);
-    boat.remove();
-    helmet.remove();
+
 }

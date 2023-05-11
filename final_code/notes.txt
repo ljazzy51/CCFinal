@@ -138,3 +138,5 @@ Scenes:
     - Even when I use the remove method on both the boat and the helmet it still doesnt remove them. It doesnt matter where I place them and even if I 
     put it in the same place as when I removed the rope and the stairs for whatever reason they dont react even though they are essentially the same
     just pngs rather than shapes. Is that the difference? The sprite type? 
+    - Even when I move the boat and helmet the original location of the boat and the helmet remain there and dont move which makes me think theyre spawning
+    on top of eachother 

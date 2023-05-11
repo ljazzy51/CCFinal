@@ -23,8 +23,6 @@ function draw(){
   }
   if(scene_1_finished == true){
     scene_two_background();
-    draw_boat();
-    draw_helmet();
   }
   if(scene_2_finished == true){
     scene_three_background();
