@@ -132,10 +132,10 @@ function get_star(){
 }
 
 function submarine(){
-    sub.img = 'data/sub.png';
-    sub.x = 700;
-    sub.y = 400; 
-    sub.rotation = 0;
+    sub_ship.img = 'data/sub.png';
+    sub_ship.x = 700;
+    sub_ship.y = 400; 
+    sub_ship.rotation = 0;
 }
 
 function ship_captain(){
@@ -147,8 +147,51 @@ function ship_captain(){
 }
 
 function befriend_captain(){
-    if(sub.mouse.pressed()){
+    if(sub_ship.mouse.pressed()){
         captain.visible = true; 
         ship_captain();
+        instructions.visible = false; 
     }
+}
+
+function ask_for_ride(){
+    if(polo.collides(captain)){
+        yes_();
+        no_();
+        convo(); 
+    }
+}
+
+function yes_(){
+    yes_bttn.x = 700; 
+    yes_bttn.y = 350; 
+    yes_bttn.width = 50; 
+    yes_bttn.height = 50; 
+    yes_bttn.color = (181, 255, 156);
+    yes_bttn.textSize = 20; 
+    yes_bttn.text = "YES"; 
+    yes_bttn.rotation = 0; 
+
+}
+
+function no_(){
+    no_bttn.x = 800; 
+    no_bttn.y = 350; 
+    no_bttn.width = 50; 
+    no_bttn.height = 50; 
+    no_bttn.color = (255, 142, 134);
+    no_bttn.textSize = 20; 
+    no_bttn.text = "NO"; 
+    no_bttn.rotation = 0; 
+}
+
+function convo(){
+    text_bttn.x = 700; 
+    text_bttn.y = 300; 
+    text_bttn.width = 50; 
+    text_bttn.height = 50; 
+    text_bttn.color = "pink";
+    text_bttn.textSize = 20; 
+    text_bttn.text = "Do you want a ride?"; 
+    text_bttn.rotation = 0; 
 }

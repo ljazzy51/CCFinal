@@ -159,3 +159,21 @@ Scenes:
     - Added the captain of the ship so that you can click on the ship and the captain  comes out to speak with you 
     - The next step is to trade the star (which is the key for the space shuttle) for a ride to the next part of the adventure
     - Ive made a lot of progress for tonight and Im going to take a break until tomorrow. Tomorrow I must finish this so ill pick up after work 
+
+05/12/2023:
+    - Working on the interactions between polo and the ship captain in scene 4.
+    - For some reason when the ship is clicked and the captain leaves the ship to speak to polo, polo loses his ability to move
+    - Before clicking on the sub, polo can move perfectly fine, however after clicking on the submarine, polo is stuck in place. When looking at my code 
+    I dont see anywhere that would reflect the change in polos movement and when I look at the developer there seems to be an error i the planck which I
+    am unfamiliar with 
+    - Everything up until here works and the next steps include a series of yes or no questions for the player to interact with in order to get to the 
+    second to last scene
+    - Do you want a ride?
+        - No > leads back to do you want a ride 
+        - Yes > I heard you have the star key to my ship!
+            - No > leads back to do you want a ride?
+            - Yes > polo gives over the star and they both go to the ship 
+                - Scene 4 ends with the ship taking flight and going to the mushroom world
+    - The last full scene is the mushroom world and there you find the mushroom rocket that brings polo back to his home
+    - Once polo is home the game is over
+    - I have everything mapped out I just need to figure out this movement thing so the scenes can continue on

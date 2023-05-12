@@ -11,7 +11,8 @@ let fish, fishies, fish_leader;
 let keep_swimming = true; 
 let polo_key = false;
 let polo_star = false;
-let sub, captain; 
+let sub_ship, captain; 
+let yes_bttn, no_bttn, text_bttn; 
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
@@ -62,10 +63,18 @@ function setup(){
   star.visible = false;
 
   // submarine for scene 4
-  sub = new Sprite();
-  sub.visible = false; 
+  sub_ship = new Sprite();
+  sub_ship.visible = false; 
   captain = new Sprite();
   captain.visible = false; 
+
+  // conversation with the captain for scene 4
+  yes_bttn = new Sprite();
+  yes_bttn.visible = false;
+  no_bttn = new Sprite();
+  no_bttn.visible = false;
+  text_bttn = new Sprite();
+  text_bttn.visible = false;
 }
 
 function draw(){

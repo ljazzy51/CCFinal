@@ -88,6 +88,7 @@ function draw_boat(){
     boat.x = windowWidth/2; 
     boat.y = 550;
     boat.collider = 'k';
+    boat.rotation = 0;
     polo.overlaps(boat); 
 }
 
@@ -149,9 +150,8 @@ function scene_three_background(){
 }
 
 function three_four(){
-    if(scene_4_finished == false && scene_3_finished == true){
+    if(scene_3_finished == true){
         treasure_opened.remove(); 
-        keep_swimming = true; 
         fishies.remove(); 
         fish_leader.remove();
     }
@@ -159,9 +159,10 @@ function three_four(){
 
 function scene_four_background(){
     submarine();
-    sub.visible = true;
+    sub_ship.visible = true;
     help(400, 300, 400, 50);
     instructions.text = "Click on ship to see if anyone is inside!";
     instructions.visible = true;
     befriend_captain();
+    //ask_for_ride(); 
 }
