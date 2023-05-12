@@ -1,10 +1,16 @@
 // These are the functions necessary for the third scene. Its its own document because its where things get complicated with interactions and players
 
-function treasure_box(){
-    treasure.img = 'data/treasure_closed.png';
-    treasure.x = 1000;
-    treasure.y = windowHeight - 200;
-    treasure.rotation = 0; 
+function treasure_box_closed(){
+    treasure_closed.img = 'data/treasure_closed.png';
+    treasure_closed.x = 1000;
+    treasure_closed.y = windowHeight - 200;
+    treasure_closed.rotation = 0; 
+}
+function treasure_box_opened(){
+    treasure_opened.img = 'data/treasure_opened.png';
+    treasure_opened.x = 1000;
+    treasure_opened.y = windowHeight - 200;
+    treasure_opened.rotation = 0; 
 }
 
 // Regular fish friends who swim in a school 
@@ -92,8 +98,36 @@ function polo_get_key(){
 }
 
 function polo_has_key(){
-    if(polo_key = true){
+    if(polo_key == true){
         treasure_key.x = polo.x; 
         treasure_key.y = polo.y; 
     }
 }
+
+function open_box(){
+    if(polo_key == true){
+        if(polo.overlaps(treasure_closed)){
+            treasure_closed.visible = false;
+            treasure_closed.remove();
+            treasure_key.remove();
+            treasure_opened.visible = true; 
+        }
+    }
+}
+
+function get_star(){
+    star.img = 'data/star.png';
+    star.x = 1015;
+    star.y = windowHeight - 200;
+    star.rotation = 0; 
+
+    help(700, 400, 300, 50);
+    instructions.text = "Click on the star to collect it!";
+    instructions.visible = true;
+
+    if(star.mouse.pressed()){
+        star.remove(); 
+        polo_star = true;
+    }
+}
+

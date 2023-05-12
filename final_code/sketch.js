@@ -5,10 +5,12 @@ let scene_1_finished = false;
 let steps, helmet, boat;
 let scene_2_finished = false;
 let scene_3_finished = false;
-let treasure, treasure_key;
+let scene_4_finished = false;
+let treasure_closed, treasure_opened, treasure_key, star;
 let fish, fishies, fish_leader;
 let keep_swimming = true; 
 let polo_key = false;
+let polo_star = false;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
@@ -33,8 +35,11 @@ function setup(){
   boat.visible = false;
 
   // treasure for scene 3
-  treasure = new Sprite();
-  treasure.visible = false;
+  treasure_closed = new Sprite();
+  treasure_closed.visible = false;
+  treasure_opened = new Sprite();
+  polo.overlaps(treasure_opened);
+  treasure_opened.visible = false;
 
   // normal fishies group for scene 3
   fishies = new Group();
@@ -52,6 +57,8 @@ function setup(){
   treasure_key = new Sprite();
   treasure_key.visible = false; 
 
+  star = new Sprite();
+  star.visible = false;
 }
 
 function draw(){
@@ -72,5 +79,6 @@ function draw(){
   
   one_two();
   two_three(); 
+  three_four();
 
 }

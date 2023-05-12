@@ -125,8 +125,10 @@ function scene_three_background(){
     background(62,115,224);
 
     polo_helmet();
-    treasure.visible = true;
-    treasure_box();
+    treasure_closed.visible = true;
+    if(treasure_closed.visible == true){
+        treasure_box_closed();
+    }
     fishies.visible = true;
     fish_friends();
     fish_leader.visible = true;
@@ -134,5 +136,27 @@ function scene_three_background(){
     polo_fish_leader();
     polo_get_key();
     polo_has_key();
+    open_box();
+    if(treasure_opened.visible == true){
+        treasure_box_opened();
+        star.visible = true;
+        get_star();
+    }
+    if(polo_star == true){
+        instructions.visible = false; 
+        scene_3_finished = true;
+    }
 }
 
+function three_four(){
+    if(scene_4_finished == false && scene_3_finished == true){
+        treasure_opened.remove(); 
+        keep_swimming = true; 
+        polo.x = 100; 
+        polo.y = 550;       
+    }
+}
+
+function scene_four_background(){
+    
+}
