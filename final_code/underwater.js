@@ -131,3 +131,24 @@ function get_star(){
     }
 }
 
+function submarine(){
+    sub.img = 'data/sub.png';
+    sub.x = 700;
+    sub.y = 400; 
+    sub.rotation = 0;
+}
+
+function ship_captain(){
+    captain.color = "green";
+    captain.diameter = 100;
+    captain.x = 1000;
+    captain.y = 500; 
+    captain.rotation = 0; 
+}
+
+function befriend_captain(){
+    if(sub.mouse.pressed()){
+        captain.visible = true; 
+        ship_captain();
+    }
+}

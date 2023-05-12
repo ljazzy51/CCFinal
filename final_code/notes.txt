@@ -152,3 +152,10 @@ Scenes:
     - I got the normal fish to work how I want them to work now Im adding the special fish who gives the key!
     - I got the special fish to work properly as well as the text box with instructions so the player knows what to do
     - If you click on the special fish she gives you the key to open the treasure box
+    - The key opens the treasure box and the treasure box has a star in it. When you collect the star it triggers the next scene
+
+05/11/2023 (Working on Scene 4):
+    - Scene 4 starts with a submarine/ship thing on the ceneter of the screen and the fish and other things leaving the screen 
+    - Added the captain of the ship so that you can click on the ship and the captain  comes out to speak with you 
+    - The next step is to trade the star (which is the key for the space shuttle) for a ride to the next part of the adventure
+    - Ive made a lot of progress for tonight and Im going to take a break until tomorrow. Tomorrow I must finish this so ill pick up after work 

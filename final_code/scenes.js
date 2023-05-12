@@ -152,11 +152,16 @@ function three_four(){
     if(scene_4_finished == false && scene_3_finished == true){
         treasure_opened.remove(); 
         keep_swimming = true; 
-        polo.x = 100; 
-        polo.y = 550;       
+        fishies.remove(); 
+        fish_leader.remove();
     }
 }
 
 function scene_four_background(){
-    
+    submarine();
+    sub.visible = true;
+    help(400, 300, 400, 50);
+    instructions.text = "Click on ship to see if anyone is inside!";
+    instructions.visible = true;
+    befriend_captain();
 }

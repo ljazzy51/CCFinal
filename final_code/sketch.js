@@ -11,6 +11,7 @@ let fish, fishies, fish_leader;
 let keep_swimming = true; 
 let polo_key = false;
 let polo_star = false;
+let sub, captain; 
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
@@ -59,6 +60,12 @@ function setup(){
 
   star = new Sprite();
   star.visible = false;
+
+  // submarine for scene 4
+  sub = new Sprite();
+  sub.visible = false; 
+  captain = new Sprite();
+  captain.visible = false; 
 }
 
 function draw(){
@@ -70,6 +77,9 @@ function draw(){
   }
   if(scene_2_finished == true){
     scene_three_background();
+  }
+  if(scene_3_finished == true){
+    scene_four_background();
   }
 
   //print(mouseX, "and ", mouseY);
