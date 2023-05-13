@@ -126,36 +126,40 @@ function get_star(){
     instructions.visible = true;
 
     if(star.mouse.pressed()){
-        star.remove(); 
+        star.visible = false; 
         polo_star = true;
     }
 }
 
 function submarine(){
     sub_ship.img = 'data/sub.png';
-    sub_ship.x = 700;
+    sub_ship.x = 500;
     sub_ship.y = 400; 
     sub_ship.rotation = 0;
 }
 
 function ship_captain(){
     captain.color = "green";
-    captain.diameter = 100;
+    captain.width = 100;
+    captain.height = 100;
     captain.x = 1000;
     captain.y = 400; 
     captain.rotation = 0; 
 }
 
 function befriend_captain(){
-    if(sub_ship.mouse.pressed()){
+    if(talk_to_captain == true){
+        instructions.visible = false;
         captain.visible = true; 
-        ship_captain();
-        instructions.visible = false; 
+        ship_captain(); 
     }
 }
 
 function ask_for_ride(){
     if(polo.collides(captain)){
+        yes_bttn.visible = true;
+        no_bttn.visible = true;
+        text_bttn.visible = true;
         yes_();
         no_();
         convo(); 
@@ -163,35 +167,75 @@ function ask_for_ride(){
 }
 
 function yes_(){
-    yes_bttn.x = 700; 
+    yes_bttn.x = 800; 
     yes_bttn.y = 350; 
     yes_bttn.width = 50; 
     yes_bttn.height = 50; 
-    yes_bttn.color = (181, 255, 156);
     yes_bttn.textSize = 20; 
+    yes_bttn.color = 'lightgreen';
     yes_bttn.text = "YES"; 
     yes_bttn.rotation = 0; 
-
+    yes_bttn.collider = 's';
 }
 
 function no_(){
-    no_bttn.x = 800; 
+    no_bttn.x = 900; 
     no_bttn.y = 350; 
     no_bttn.width = 50; 
     no_bttn.height = 50; 
-    no_bttn.color = (255, 142, 134);
     no_bttn.textSize = 20; 
+    no_bttn.color = 'red';
     no_bttn.text = "NO"; 
     no_bttn.rotation = 0; 
+    no_bttn.collider = 's';
 }
 
 function convo(){
-    text_bttn.x = 700; 
-    text_bttn.y = 300; 
-    text_bttn.width = 50; 
+    text_bttn.x = 850; 
+    text_bttn.y = 250; 
+    text_bttn.width = 350; 
     text_bttn.height = 50; 
-    text_bttn.color = "pink";
     text_bttn.textSize = 20; 
-    text_bttn.text = "Do you want a ride?"; 
+    text_bttn.color = 'pink';
+    text_bttn.text = "I heard you found my star key!"; 
     text_bttn.rotation = 0; 
+    text_bttn.collider = 's';
+}
+
+function go_(){
+    go_bttn.x = 800; 
+    go_bttn.y = 350; 
+    go_bttn.width = 100; 
+    go_bttn.height = 50; 
+    go_bttn.textSize = 20; 
+    go_bttn.color = 'lightgreen';
+    go_bttn.text = "LETS GO"; 
+    go_bttn.rotation = 0; 
+    go_bttn.collider = 's';
+}
+
+function ride_options_1(){
+    if(yes_bttn.mouse.pressed()){
+        yes_();
+        no_();
+        convo();
+        text_bttn.update(text_bttn.text = "Yay! Lets go on the next adventure!", text_bttn.width = 350); 
+        yes_bttn.visible = false; 
+        no_bttn.visible = false; 
+        go_bttn.visible = true;
+        go_();
+    }
+    if(no_bttn.mouse.pressed()){
+        yes_();
+        no_();
+        convo();
+        text_bttn.update(text_bttn.text = "Hmmm. Dont Lie! Thats the only key!", text_bttn.width = 350); 
+        no_bttn.visible = false; 
+    }
+}
+
+function ride_options_2(){
+    if(go_bttn.mouse.pressed()){
+        scene_4_finished = true; 
+    }
 }

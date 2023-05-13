@@ -145,6 +145,7 @@ function scene_three_background(){
     }
     if(polo_star == true){
         instructions.visible = false; 
+        star.visible = false;
         scene_3_finished = true;
     }
 }
@@ -158,16 +159,30 @@ function three_four(){
 }
 
 function scene_four_background(){
+    background(62,115,224);
     submarine();
     sub_ship.visible = true;
-    help(400, 300, 400, 50);
+    help(400, 200, 400, 50);
     instructions.text = "Click on ship to see if anyone is inside!";
     instructions.visible = true;
-    //befriend_captain();
-    //ask_for_ride(); 
     if(sub_ship.mouse.pressed()){
-        instructions.visible = false;
-        ship_captain();
-        captain.visible = true;
+        talk_to_captain = true;
+    }
+    befriend_captain();
+    ask_for_ride(); 
+    ride_options_1();
+    ride_options_2();
+}
+
+function four_five(){ 
+    //scene_4_finished = true;
+    if(scene_4_finished == true) {
+        star.update(star.visible = true, star.x = 485, star.y = 200);
+        captain.update(captain.x =500, captain.y = 400);
+        helmet.visible = false;
+        polo.update(polo.x = 350, polo.y = 350);
+
+        go_bttn.visible = false;
+        text_bttn.visible = false;
     }
 }

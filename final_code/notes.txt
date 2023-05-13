@@ -177,3 +177,6 @@ Scenes:
     - The last full scene is the mushroom world and there you find the mushroom rocket that brings polo back to his home
     - Once polo is home the game is over
     - I have everything mapped out I just need to figure out this movement thing so the scenes can continue on
+    - Ive figured out the interaction of polo and the captain and I have also gotten the question and answer sequence to work so the player has to interact
+    with the game in order to have the captain give a ride to polo 
+    - I finished scene 4 and now im working on scene 5 which will take polo home 

@@ -12,7 +12,9 @@ let keep_swimming = true;
 let polo_key = false;
 let polo_star = false;
 let sub_ship, captain; 
-let yes_bttn, no_bttn, text_bttn; 
+let yes_bttn, no_bttn, text_bttn, go_bttns; 
+let talk_to_captain = false; 
+let gave_star = false;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
@@ -75,6 +77,8 @@ function setup(){
   no_bttn.visible = false;
   text_bttn = new Sprite();
   text_bttn.visible = false;
+  go_bttn = new Sprite();
+  go_bttn.visible = false;
 }
 
 function draw(){
@@ -99,5 +103,6 @@ function draw(){
   one_two();
   two_three(); 
   three_four();
+  four_five();
 
 }
