@@ -163,6 +163,11 @@ function scene_four_background(){
     help(400, 300, 400, 50);
     instructions.text = "Click on ship to see if anyone is inside!";
     instructions.visible = true;
-    befriend_captain();
+    //befriend_captain();
     //ask_for_ride(); 
+    if(sub_ship.mouse.pressed()){
+        instructions.visible = false;
+        ship_captain();
+        captain.visible = true;
+    }
 }

@@ -142,7 +142,7 @@ function ship_captain(){
     captain.color = "green";
     captain.diameter = 100;
     captain.x = 1000;
-    captain.y = 500; 
+    captain.y = 400; 
     captain.rotation = 0; 
 }
 
