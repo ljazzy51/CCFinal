@@ -179,4 +179,6 @@ Scenes:
     - I have everything mapped out I just need to figure out this movement thing so the scenes can continue on
     - Ive figured out the interaction of polo and the captain and I have also gotten the question and answer sequence to work so the player has to interact
     with the game in order to have the captain give a ride to polo 
-    - I finished scene 4 and now im working on scene 5 which will take polo home 
+    - I finished scene 4 and now im working on scene 5 which will take polo home
+    - Due to timming issues I am just going to have this spaceship take polo home and skip the mushroom world entirely
+    - Finished game at exactly 2:00am on saturday may 13th 

@@ -175,14 +175,47 @@ function scene_four_background(){
 }
 
 function four_five(){ 
-    //scene_4_finished = true;
-    if(scene_4_finished == true) {
-        star.update(star.visible = true, star.x = 485, star.y = 200);
-        captain.update(captain.x =500, captain.y = 400);
-        helmet.visible = false;
-        polo.update(polo.x = 350, polo.y = 350);
-
-        go_bttn.visible = false;
+    if(gave_star == true) {
+        scene_4_finished = true;
+        
         text_bttn.visible = false;
+        go_bttn.remove();
+        yes_bttn.remove();
+        no_bttn.remove();
+        text_bttn.visible = false;
+        sub_ship.visible = false;
+        star.remove();
+        helmet.remove();
+    }
+}
+
+
+function scene_five_background(){
+    background(62,115,224);
+
+    captain.visible = false;
+    polo.visible = false;
+    in_ship.visible = true;
+    ship();
+    home_bttn.visible = true;
+    go_home();
+    headed_home();
+    adventure_done();
+}
+
+function adventure_done(){
+    if(home == true){
+        scene_one_background();
+        polo.visible = true;
+        polo.x = 855;
+        polo.y = 555;
+        home_bttn.visible = false;
+        ship_end.visible = true;
+        ship_ending();
+        bye_polo.visible = true;
+        bye_captain.visible = true; 
+        polo_bye();
+        captain_bye();
+
     }
 }

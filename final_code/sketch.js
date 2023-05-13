@@ -6,6 +6,7 @@ let steps, helmet, boat;
 let scene_2_finished = false;
 let scene_3_finished = false;
 let scene_4_finished = false;
+let scene_5_finished = false;
 let treasure_closed, treasure_opened, treasure_key, star;
 let fish, fishies, fish_leader;
 let keep_swimming = true; 
@@ -15,6 +16,10 @@ let sub_ship, captain;
 let yes_bttn, no_bttn, text_bttn, go_bttns; 
 let talk_to_captain = false; 
 let gave_star = false;
+let in_ship; 
+let home_bttn, ship_end, bye_polo, bye_captain;
+let home = false; 
+
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
@@ -79,6 +84,18 @@ function setup(){
   text_bttn.visible = false;
   go_bttn = new Sprite();
   go_bttn.visible = false;
+
+  // polo in the ship for scene 5
+  in_ship = new Sprite();
+  in_ship.visible = false;
+  ship_end = new Sprite();
+  ship_end.visible = false;
+  home_bttn = new Sprite();
+  home_bttn.visible = false;
+  bye_polo = new Sprite();
+  bye_polo.visible = false;
+  bye_captain = new Sprite();
+  bye_captain.visible = false;
 }
 
 function draw(){
@@ -93,6 +110,9 @@ function draw(){
   }
   if(scene_3_finished == true){
     scene_four_background();
+  }
+  if(scene_4_finished == true){
+    scene_five_background();
   }
 
   //print(mouseX, "and ", mouseY);

@@ -236,6 +236,6 @@ function ride_options_1(){
 
 function ride_options_2(){
     if(go_bttn.mouse.pressed()){
-        scene_4_finished = true; 
+        gave_star = true; 
     }
 }
