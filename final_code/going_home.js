@@ -31,6 +31,7 @@ function ship_move(){
   }
 }
 
+//push to go home
 function go_home(){
     home_bttn.x = 750;
     home_bttn.y = 100; 
@@ -57,6 +58,7 @@ function ship_ending(){
     ship_end.rotation = 0; 
 }
 
+// polo thanks you for an adventure 
 function polo_bye(){
     bye_captain.x = 1000;
     bye_captain.y = 450; 
@@ -69,6 +71,7 @@ function polo_bye(){
     bye_captain.rotation = 0; 
 }
 
+// the captain of the ship says bye to polo at the end 
 function captain_bye(){
     bye_polo.x = 400;
     bye_polo.y = 75; 

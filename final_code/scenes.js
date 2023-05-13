@@ -203,6 +203,7 @@ function scene_five_background(){
     adventure_done();
 }
 
+// ending of the sketch
 function adventure_done(){
     if(home == true){
         scene_one_background();
